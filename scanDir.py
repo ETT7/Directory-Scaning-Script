@@ -1,7 +1,7 @@
 import os
 import shutil
 import logging
-path = os.path.join(os.getcwd(),'scan_dir')
+path = os.path.join(os.getcwd(),'scan')
 scanFolder=[]
 scanFile=[]
 folderList = []
@@ -29,7 +29,7 @@ def main():
     # print("justFile",justFile)
 
 
-    scan(sorted(fileList, key=len), sorted(folderList, key=len))
+    scan(fileList, folderList)
     # print("difFolder",difFolder)
 
 def scan(fileList, folderList):
